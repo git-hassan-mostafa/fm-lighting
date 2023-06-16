@@ -1,0 +1,149 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+
+.fa-2x {
+  font-size: 1.5em;
+}
+
+.fa {
+  position: relative;
+  display: table-cell;
+  width: 60px;
+  height: 36px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 15px;
+
+  @apply text-slate-900
+}
+
+.main-menu:hover,
+nav.main-menu.expanded {
+  @apply w-52
+}
+
+.main-menu {
+  /* border-right: 1px solid #e5e5e5;
+  height: 100vh;
+  width: 60px; */
+  /* overflow: hidden; */
+  /* position: sticky;
+  top: 0px;
+  left: 0px; */
+  -webkit-transition: width 0.05s linear;
+  transition: width 0.05s linear;
+  -webkit-transform: translateZ(0) scale(1, 1);
+  /* z-index: 1000; */
+
+  @apply bg-cyan-700 hidden sm:block border-r-2 border-r-white w-16 overflow-hidden sticky top-0 flex-grow
+}
+
+.main-menu .logo {
+  @apply m-auto w-fit mt-3 mb-10
+}
+
+.main-menu .logo .logo-image {
+  @apply w-10 h-10 rounded-full
+}
+
+.main-menu>ul {
+  margin: 7px 0;
+}
+
+.main-menu li {
+  position: relative;
+  display: block;
+  width: 250px;
+  @apply mb-5
+}
+
+.main-menu li>.link {
+  position: relative;
+  display: table;
+  border-collapse: collapse;
+  border-spacing: 0;
+  /* color: #999; */
+  font-family: arial;
+  font-size: 14px;
+  text-decoration: none;
+  -webkit-transform: translateZ(0) scale(1, 1);
+  /* -webkit-transition: all 0.1s linear; */
+  /* transition: all 0.1s linear; */
+  @apply text-slate-900
+}
+
+.main-menu .nav-icon {
+  position: relative;
+  display: table-cell;
+  width: 60px;
+  height: 36px;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 18px;
+}
+
+.main-menu .nav-text {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+  width: 190px;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+.main-menu>ul.logout {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.link:hover,
+.link:focus {
+  text-decoration: none;
+}
+
+nav {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+nav ul,
+nav li {
+  outline: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.main-menu li:hover>.link,
+nav.main-menu li.active>.link {
+  color: #fff;
+
+  .icon {
+    @apply text-white
+  }
+}
+
+.bottom-navigation {
+  @apply sm:hidden
+}
+
+/* .area {
+  float: left;
+  background: #e2e2e2;
+  width: 100%;
+  height: 100%;
+  z-index: 1000;
+  } */
+
+@font-face {
+  font-family: 'Titillium Web';
+  font-style: normal;
+  font-weight: 300;
+  src: local('Titillium WebLight'), local('TitilliumWeb-Light'), url(http://themes.googleusercontent.com/static/fonts/titilliumweb/v2/anMUvcNT0H1YN4FII8wpr24bNCNEoFTpS2BTjF6FB5E.woff) format('woff');
+}

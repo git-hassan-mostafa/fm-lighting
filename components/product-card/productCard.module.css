@@ -1,0 +1,40 @@
+
+.productCard {
+    @apply w-52 p-px bg-zinc-200 shadow-md hover:shadow-lg 
+}
+
+.productImage {
+    @apply w-full h-40 object-cover object-center
+}
+
+.productName {
+    @apply text-center font-bold text-xl text-cyan-700 m-2
+}
+
+.productPrices {
+    @apply flex justify-center gap-2 p-1
+}
+.productDiscountPrice{
+    @apply text-lg text-green-500 font-bold
+}
+.productPrice{
+    @apply text-lg text-red-700 font-bold line-through
+}
+
+.buttons {
+    @apply flex gap-1 p-2
+}
+
+.seeMore {
+}
+
+.link{
+    @apply  flex-1 p-2 rounded-full bg-cyan-700 hover:bg-cyan-600 text-white text-center
+
+}
+.addToCart{
+    @apply text-cyan-700 text-2xl hover:text-cyan-600
+}
+.removeFromCart{
+    @apply text-red-600 text-2xl hover:text-red-500
+}

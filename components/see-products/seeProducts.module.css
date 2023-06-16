@@ -1,0 +1,54 @@
+
+main.products {
+    @apply my-8 m-auto w-full  flex flex-col gap-5 mb-16
+}
+@media (min-width:730px) {
+    main.products{
+        width: 640px;
+    }
+}
+.product{
+    @apply bg-zinc-100 flex justify-between p-5 rounded-lg shadow-md hover:shadow-lg items-center
+}
+
+.productInfo{
+    @apply flex gap-3 items-center
+}
+.productImage{
+    @apply w-20 
+}
+
+.name {
+    @apply font-bold text-lg sm:text-2xl
+}
+
+.price {
+    @apply font-bold text-lg sm:text-xl text-red-600 line-through
+}
+.discountPrice{
+    @apply font-bold text-lg sm:text-xl text-green-500 
+}
+
+.quantity{
+    @apply text-sm sm:text-lg text-gray-600
+}
+
+.productActions{
+    @apply flex self-center gap-5 cursor-pointer
+}
+
+.delete , .edit {
+    @apply text-3xl
+}
+
+.delete {
+    @apply text-red-600 hover:text-red-400
+}
+
+.edit {
+    @apply text-green-600 hover:text-green-500
+}
+
+.loadMore {
+    @apply m-auto text-5xl text-zinc-500 my-2 hover:text-zinc-600
+}

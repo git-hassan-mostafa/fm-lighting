@@ -1,0 +1,31 @@
+    .scroll-container {
+        @apply  w-full flex bg-white
+    }
+
+    .scroll-container > .logo{
+        @apply w-10 h-10 rounded-full self-center m-2 sm:hidden
+    }
+    .scroll-content::-webkit-scrollbar{
+        @apply bg-zinc-200 h-1.5 mt-1
+    }
+
+    .scroll-content::-webkit-scrollbar-thumb{
+        @apply bg-zinc-600 w-1 h-1 hover:bg-zinc-500 rounded-full
+    }
+    .scroll-content {
+        @apply  flex overflow-x-auto whitespace-nowrap w-full
+    }
+
+    .scroll-content > span  {
+        @apply py-1 px-3 border border-cyan-700 rounded-full mx-2 my-3 text-cyan-700 cursor-pointer
+    }
+
+    .scroll-content >span.active{
+        @apply bg-cyan-700 text-white border-cyan-700
+    }
+    /* .load-more-button{
+        @apply 
+    } */
+    .load-more {
+        @apply mx-auto text-5xl text-zinc-500 my-2 hover:text-zinc-600 mb-16 cursor-pointer
+    }
