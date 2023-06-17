@@ -104,6 +104,7 @@
   position: relative;
   margin: 10px 0;
   align-items: center;
+  @apply flex-col sm:flex-row items-start 
 }
 
 .product-price .offer-price{
@@ -115,7 +116,7 @@
   font-weight: 500;
   text-decoration: line-through;
   color: var(--grey);
-  margin-left: 12px;
+  @apply sm:ml-3
 }
 
 /** Product Details **/

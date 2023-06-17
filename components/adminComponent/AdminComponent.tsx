@@ -3,10 +3,10 @@ import { useRouter } from 'next/navigation'
 import React from 'react'
 
 export default function AdminComponent() {
-  const {push} = useRouter()
+  const {replace} = useRouter()
   React.useEffect(()=>{
-    push('/admin/see-products')
-  })
+    replace('/admin/see-products')
+  },[])
   return (
     <div>
     </div>

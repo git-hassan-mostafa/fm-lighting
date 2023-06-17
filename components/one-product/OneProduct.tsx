@@ -101,7 +101,7 @@ export default function OneProduct(
             
         </div>
         <br />
-        <h2 className='m-5 text-2xl font-bold mb-16'> Suggested Products </h2>
+        {Boolean(suggestedProducts?.filter(sproduct=>sproduct.id!==product.id)?.length)  && <h2 className='ml-5 text-2xl font-bold mb-16'> Suggested Products </h2> }
             <AllProducts isFetching={isFetching} data={suggestedProducts?.filter(sproduct=>sproduct.id!==product.id) as productType[]} />
         </>
         
