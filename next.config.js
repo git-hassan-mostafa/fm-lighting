@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   env: {
-    VERIFY_PASSWORD:'AHMAD_KHALED_FM_LIGHTING_ELECTRIC_PRODUCTS',
+    VERIFY_PASSWORD:'FM_Lighting_Alibaba_20623',
     PHONE_NUMBER:'96170449622'
   },
   images: {
